@@ -1,0 +1,117 @@
+.section-news {
+  width: 100%;
+  margin-top: 150px;
+
+  &_title {
+    text-align: center;
+  }
+  &_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+
+    & .news-item {
+      width: 30%;
+      height: auto;
+      border: 1px solid $gray-light;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+
+      box-shadow: 0 0 5px $gray-light;
+      overflow: hidden;
+      position: relative;
+
+      cursor: pointer;
+      margin: 0 20px;
+
+      &:hover {
+        box-shadow: 0 0 5px $gray-text-light;
+      }
+
+      &_img {
+        overflow: hidden;
+        & img {
+          object-fit: cover;
+          width: 100%;
+          max-height: 250px;
+          transition: all 0.5s ease-in-out;
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -ms-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            opacity: 0.9;
+          }
+        }
+      }
+      &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        padding: 20px 25px;
+
+        & .news-author {
+          font-size: 1.2rem;
+          display: flex;
+          gap: 15px;
+          text-transform: uppercase;
+          font-weight: 500;
+          letter-spacing: 1px;
+          &_icon {
+            font-size: 0.5rem;
+            margin-top: 5px;
+          }
+        }
+      }
+      &_title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+      &_desc {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        color: $gray-text;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+      &_btn {
+        margin-top: 0;
+      }
+      &_time {
+        background-color: $green;
+        padding: 7px 22px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        & > span {
+          font-size: 1.4rem;
+          color: $white;
+        }
+      }
+    }
+  }
+}

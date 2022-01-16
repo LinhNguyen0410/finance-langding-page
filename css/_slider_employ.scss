@@ -1,0 +1,35 @@
+.section-employer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  align-items: center;
+  & .employer-item {
+    height: 450px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 80px 10px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.14s linear;
+      -webkit-transition: all 0.14s linear;
+      -moz-transition: all 0.14s linear;
+      -ms-transition: all 0.14s linear;
+      -o-transition: all 0.14s linear;
+
+      &:hover {
+        margin-left: 4px;
+      }
+    }
+  }
+}

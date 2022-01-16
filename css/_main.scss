@@ -1,0 +1,44 @@
+.section-main {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  & .main-button {
+    margin-top: 30px;
+  }
+  &-right {
+    width: 50%;
+    background-color: red;
+
+    & img {
+      position: absolute;
+      top: 20px;
+    }
+    & .img-circle {
+      width: 500px;
+    }
+    & .img-man-coins {
+      width: 500px;
+    }
+    & .img-pattern {
+      width: 400px;
+    }
+    & .img-notes {
+      width: 180px;
+      top: 50%;
+      left: 45%;
+    }
+    & .img-chart {
+      width: 200px;
+      top: 20%;
+      right: 10%;
+    }
+  }
+}
