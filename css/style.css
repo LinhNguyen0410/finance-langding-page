@@ -366,39 +366,12 @@ html {
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1240px) {
-  .navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-left: 10px;
-  }
-  .navbar-left__logo img {
-    width: 60px;
-  }
-  .navbar-left__menu .menu-list {
-    gap: 20px;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-  }
-  .navbar-left__menu .menu-item {
-    gap: 10px;
-  }
-  .navbar-left__menu .menu-item > a ion-icon {
-    margin-bottom: -3px;
+  .navbar {
     display: none;
-  }
-  .navbar-right {
-    margin-right: 10px;
-  }
-  .navbar-right__contact {
-    gap: 5px;
-    font-size: 1rem;
-    padding: 10px 15px;
-    letter-spacing: 0.2px;
   }
 
   .navbar-mobile {
-    display: none;
+    display: block;
   }
 }
 @media only screen and (min-width: 1241px) and (max-width: 1439px) {
@@ -2252,6 +2225,7 @@ html {
 .navbar-mobile .list-menu-mobile {
   display: none;
   width: 100%;
+  opacity: 0.9;
   height: 100%;
   background-color: #000;
   position: absolute;
