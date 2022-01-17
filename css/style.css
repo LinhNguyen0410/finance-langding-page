@@ -365,7 +365,7 @@ html {
     display: none;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1240px) {
+@media only screen and (min-width: 600px) and (max-width: 1040px) {
   .navbar {
     display: none;
   }
@@ -374,7 +374,7 @@ html {
     display: block;
   }
 }
-@media only screen and (min-width: 1241px) and (max-width: 1439px) {
+@media only screen and (min-width: 1041px) and (max-width: 1439px) {
   .navbar-mobile {
     display: none;
   }
@@ -2232,6 +2232,7 @@ html {
   top: 0;
   right: 0;
   z-index: 111;
+  padding-bottom: 100px;
 }
 .navbar-mobile .list-menu-mobile > .list-menu-mobile_wrap {
   margin-top: 100px;
