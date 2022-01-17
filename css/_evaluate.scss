@@ -1,6 +1,6 @@
 .section-evaluate {
   width: 100%;
-  height: auto;
+  height: 600px;
   margin-top: 150px;
   display: flex;
   justify-content: center;
@@ -10,7 +10,6 @@
     margin-left: 50px;
     width: 50%;
     & > h4 {
-      margin-top: 80px;
     }
     & .evaluate-statistic {
       display: flex;
@@ -21,7 +20,6 @@
       background-color: $chart;
       width: 380px;
       padding: 50px 30px;
-      margin-top: 60px;
 
       &_chart {
         background-color: $chart;
@@ -134,6 +132,152 @@
             object-fit: cover;
 
             width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section-evaluate {
+    margin-top: 200px;
+  }
+}
+// - small tablet - tablet - tablet pro
+@media only screen and (min-width: 600px) and (max-width: 1240px) {
+  .section-evaluate {
+    display: flex;
+    gap: 20px;
+    &_left {
+      margin-left: 20px;
+      width: 40%;
+      & > h4 {
+        font-size: 3rem;
+      }
+      & .evaluate-statistic {
+        width: 300px;
+        padding: 50px 30px;
+        &_chart {
+          border: 8px solid $white;
+          padding: 10px;
+          &::after {
+            top: -10px;
+            right: 40px;
+          }
+          & > span {
+            font-size: 1.5rem;
+          }
+        }
+
+        &_title {
+          & > span:first-child {
+            font-size: 1.4rem;
+          }
+
+          & > span:last-child {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    &_right {
+      margin-right: 20px;
+      width: 60%;
+      & .evaluate-block {
+        height: 250px;
+        padding: 25px 30px;
+        &_comment {
+          font-size: 1.3rem;
+          -webkit-line-clamp: 5;
+        }
+        &_author {
+          margin-top: 40px;
+          & .block-author_info {
+            & .author-name {
+              font-size: 1.8rem;
+            }
+          }
+          & .block-author_thumbnail {
+            & img {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 599px) {
+  .section-evaluate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    &_left {
+      margin-left: 0px;
+      width: 80%;
+      & > h4 {
+        font-size: 2.5rem;
+      }
+      & .evaluate-statistic {
+        margin-top: 30px;
+        width: auto;
+        padding: 50px 30px;
+        &_chart {
+          border: 8px solid $white;
+          padding: 10px;
+          &::after {
+            top: -10px;
+            right: 40px;
+          }
+          & > span {
+            font-size: 1.5rem;
+          }
+        }
+
+        &_title {
+          & > span:first-child {
+            font-size: 1.4rem;
+          }
+
+          & > span:last-child {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    &_right {
+      margin-right: 0px;
+      width: 90%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+
+      & .evaluate-block {
+        height: auto;
+        padding: 20px 20px;
+        &_stick {
+          top: -14px;
+          width: 40px;
+        }
+        &_comment {
+          font-size: 1.2rem;
+          -webkit-line-clamp: 4;
+        }
+        &_author {
+          margin-top: 20px;
+          & .block-author_info {
+            & .author-name {
+              font-size: 1.4rem;
+            }
+            & .author-role {
+              font-size: 1.2rem;
+            }
+          }
+          & .block-author_thumbnail {
+            & img {
+              width: 50px;
+            }
           }
         }
       }

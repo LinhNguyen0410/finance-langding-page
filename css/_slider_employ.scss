@@ -33,3 +33,45 @@
     }
   }
 }
+
+// - small tablet - tablet - tablet pro
+@media only screen and (min-width: 600px) and (max-width: 1240px) {
+  .section-employer {
+    width: 85%;
+    margin: 0 auto;
+    & .employer-item {
+      max-height: 400px;
+      &-img {
+        width: 45%;
+      }
+      & img {
+        max-width: 300px;
+        object-fit: cover;
+        &:hover {
+          margin-left: 0;
+        }
+      }
+    }
+    & .employer-info {
+      width: 80%;
+      height: auto;
+      padding: 20px 15px;
+
+      & .info-title {
+        font-size: 1rem;
+        letter-spacing: 0.7px;
+        line-height: 0;
+      }
+      & .info-job {
+        font-size: 1rem;
+        margin-top: 10px;
+        -webkit-line-clamp: 2;
+        line-height: 15px;
+      }
+      & .info-btn {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+    }
+  }
+}

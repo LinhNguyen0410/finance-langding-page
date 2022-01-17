@@ -35,10 +35,13 @@ html {
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
 }
 .btn:hover {
   cursor: pointer;
   background-color: $green;
+  letter-spacing: 2px;
 }
 .btn:active {
   opacity: 0.8;
@@ -135,6 +138,16 @@ html {
 @keyframes showInfoBox {
   0% {
     left: -200px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showMenuMobile {
+  0% {
+    top: -500px;
     opacity: 0;
   }
 

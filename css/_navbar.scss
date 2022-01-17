@@ -73,3 +73,96 @@
     }
   }
 }
+
+//  responsive
+// big screen
+@media only screen and (min-width: 1440px) {
+  .navbar {
+    &-left {
+      gap: 100px;
+      &__logo {
+        & img {
+          width: 150px;
+        }
+      }
+      &__menu {
+        & .menu-list {
+          gap: 50px;
+          font-size: 2rem;
+        }
+        & .menu-item {
+          & .active {
+            color: $green;
+          }
+        }
+      }
+    }
+    &-right {
+      &__contact {
+        font-size: 2rem;
+      }
+    }
+  }
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+// - small tablet - tablet - tablet pro
+@media only screen and (min-width: 600px) and (max-width: 1240px) {
+  .navbar {
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-left: 10px;
+      &__logo {
+        & img {
+          width: 60px;
+        }
+      }
+      &__menu {
+        & .menu-list {
+          gap: 20px;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+        }
+        & .menu-item {
+          gap: 10px;
+          & > a {
+            & ion-icon {
+              margin-bottom: -3px;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &-right {
+      margin-right: 10px;
+      &__contact {
+        gap: 5px;
+        font-size: 1rem;
+        padding: 10px 15px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  .navbar-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1241px) and (max-width: 1439px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+}

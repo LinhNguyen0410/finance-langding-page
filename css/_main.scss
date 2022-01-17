@@ -42,3 +42,132 @@
     }
   }
 }
+@media only screen and (min-width: 1440px) {
+  .section-main {
+    margin-top: 100px;
+    &-left {
+      width: 40%;
+      margin-left: 150px;
+    }
+    & .main-desc {
+      font-size: 2rem;
+    }
+    & .main-text {
+      font-size: 7rem;
+    }
+
+    &-right {
+      width: 50%;
+      & img {
+        right: 150px;
+      }
+      & .img-circle {
+        width: 600px;
+      }
+      & .img-man-coins {
+        width: 600px;
+      }
+      & .img-pattern {
+        width: 400px;
+      }
+      & .img-notes {
+        display: none;
+      }
+    }
+  }
+}
+
+// - small tablet - tablet - tablet pro
+@media only screen and (min-width: 600px) and (max-width: 1240px) {
+  .section-main {
+    min-height: 600px;
+    flex-direction: column;
+    &-left {
+      margin-top: 50px;
+      width: 80%;
+      & > .main-text {
+        font-size: 3rem;
+      }
+      & > .main-desc {
+        font-size: 1.3rem;
+      }
+    }
+    & .main-button {
+      margin-top: 10px;
+    }
+    &-right {
+      & img {
+        top: 70%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+      }
+      & .img-circle {
+        width: 400px;
+      }
+      & .img-man-coins {
+        width: 400px;
+      }
+      & .img-pattern {
+        display: none;
+      }
+      & .img-notes {
+        width: 80px;
+        top: 60%;
+        left: 45%;
+      }
+      & .img-chart {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .section-main {
+    min-height: 600px;
+    flex-direction: column;
+    &-left {
+      margin-top: 50px;
+      width: 80%;
+      & > .main-text {
+        font-size: 2.5rem;
+      }
+      & > .main-desc {
+        font-size: 1rem;
+      }
+    }
+    & .main-button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      font-size: 1rem;
+    }
+    &-right {
+      & img {
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+      }
+      & .img-circle {
+        width: 300px;
+      }
+      & .img-man-coins {
+        width: 300px;
+      }
+      & .img-pattern {
+        display: none;
+      }
+      & .img-notes {
+        width: 60px;
+        top: 60%;
+        left: 45%;
+      }
+      & .img-chart {
+        display: none;
+      }
+    }
+  }
+}
